@@ -23,7 +23,13 @@ const Index = () => {
       <header className="fixed top-0 w-full bg-white/95 backdrop-blur-sm border-b border-border z-50">
         <div className="container mx-auto px-4 py-4">
           <nav className="flex items-center justify-between">
-            <h1 className="text-2xl font-bold text-secondary">ПРОМПАРК "ВЯТКА"</h1>
+            <div className="flex items-center gap-3">
+              <img 
+                src="https://cdn.poehali.dev/files/70610af6-11da-485c-8c16-6c350141c957.png" 
+                alt="Логотип Промпарк Вятка" 
+                className="h-12 w-auto"
+              />
+            </div>
             <div className="hidden md:flex gap-8">
               <a href="#about" className="text-foreground hover:text-primary transition-colors">О парке</a>
               <a href="#benefits" className="text-foreground hover:text-primary transition-colors">Преимущества</a>
