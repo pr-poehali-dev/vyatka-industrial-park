@@ -288,14 +288,14 @@ const Index = () => {
                       <Icon name="MapPin" className="text-primary mr-3 mt-1 flex-shrink-0" size={24} />
                       <div>
                         <p className="font-medium">Адрес:</p>
-                        <p className="text-muted-foreground">Кировская область, трасса М7</p>
+                        <p className="text-muted-foreground">422190, Республика Татарстан, г. Мамадыш, ул. М. Джалиля, д. 23/33</p>
                       </div>
                     </div>
                     <div className="flex items-start">
                       <Icon name="Navigation" className="text-primary mr-3 mt-1 flex-shrink-0" size={24} />
                       <div>
                         <p className="font-medium">Координаты:</p>
-                        <p className="text-muted-foreground">58.6036° N, 49.6681° E</p>
+                        <p className="text-muted-foreground">55.9164° N, 51.4061° E</p>
                       </div>
                     </div>
                     <div className="flex items-start">
@@ -334,7 +334,7 @@ const Index = () => {
               <Card className="h-full">
                 <CardContent className="p-0 h-full min-h-[500px]">
                   <iframe
-                    src="https://yandex.ru/map-widget/v1/?ll=49.668100%2C58.603600&z=12&l=map&pt=49.668100,58.603600,pm2rdm"
+                    src="https://yandex.ru/map-widget/v1/?ll=51.406100%2C55.916400&z=14&l=map&pt=51.406100,55.916400,pm2rdm"
                     width="100%"
                     height="100%"
                     frameBorder="0"
