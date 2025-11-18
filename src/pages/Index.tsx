@@ -28,6 +28,8 @@ const Index = () => {
               <a href="#about" className="text-foreground hover:text-primary transition-colors">О парке</a>
               <a href="#benefits" className="text-foreground hover:text-primary transition-colors">Преимущества</a>
               <a href="#residents" className="text-foreground hover:text-primary transition-colors">Резиденты</a>
+              <a href="#location" className="text-foreground hover:text-primary transition-colors">Расположение</a>
+              <a href="#documents" className="text-foreground hover:text-primary transition-colors">Документы</a>
               <a href="#contact" className="text-foreground hover:text-primary transition-colors">Контакты</a>
             </div>
           </nav>
@@ -267,6 +269,158 @@ const Index = () => {
                 <h3 className="font-bold text-lg mb-2 text-center">ИП Ахметшин Р.Р.</h3>
                 <p className="text-sm text-muted-foreground mb-2">Производство пластмассовых изделий</p>
                 <p className="text-xs text-muted-foreground">Площадь: 0,43 Га</p>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      <section id="location" className="py-20 bg-muted/20">
+        <div className="container mx-auto px-4">
+          <h2 className="text-4xl font-bold text-center mb-12 text-secondary">Расположение</h2>
+          <div className="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
+            <div>
+              <Card>
+                <CardContent className="p-8">
+                  <h3 className="text-2xl font-semibold mb-6 text-secondary">Адрес и координаты</h3>
+                  <div className="space-y-4">
+                    <div className="flex items-start">
+                      <Icon name="MapPin" className="text-primary mr-3 mt-1 flex-shrink-0" size={24} />
+                      <div>
+                        <p className="font-medium">Адрес:</p>
+                        <p className="text-muted-foreground">Кировская область, трасса М7</p>
+                      </div>
+                    </div>
+                    <div className="flex items-start">
+                      <Icon name="Navigation" className="text-primary mr-3 mt-1 flex-shrink-0" size={24} />
+                      <div>
+                        <p className="font-medium">Координаты:</p>
+                        <p className="text-muted-foreground">58.6036° N, 49.6681° E</p>
+                      </div>
+                    </div>
+                    <div className="flex items-start">
+                      <Icon name="Car" className="text-primary mr-3 mt-1 flex-shrink-0" size={24} />
+                      <div>
+                        <p className="font-medium">Как добраться:</p>
+                        <p className="text-muted-foreground">По федеральной трассе М7 "Волга"</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="mt-8 pt-6 border-t">
+                    <h4 className="font-semibold mb-4">Расстояния до крупных городов:</h4>
+                    <ul className="space-y-2 text-muted-foreground">
+                      <li className="flex justify-between">
+                        <span>Москва</span>
+                        <span className="font-medium">~900 км</span>
+                      </li>
+                      <li className="flex justify-between">
+                        <span>Казань</span>
+                        <span className="font-medium">~200 км</span>
+                      </li>
+                      <li className="flex justify-between">
+                        <span>Киров</span>
+                        <span className="font-medium">~15 км</span>
+                      </li>
+                      <li className="flex justify-between">
+                        <span>Нижний Новгород</span>
+                        <span className="font-medium">~400 км</span>
+                      </li>
+                    </ul>
+                  </div>
+                </CardContent>
+              </Card>
+            </div>
+            <div>
+              <Card className="h-full">
+                <CardContent className="p-0 h-full min-h-[500px]">
+                  <iframe
+                    src="https://yandex.ru/map-widget/v1/?ll=49.668100%2C58.603600&z=12&l=map&pt=49.668100,58.603600,pm2rdm"
+                    width="100%"
+                    height="100%"
+                    frameBorder="0"
+                    className="rounded-lg min-h-[500px]"
+                    title="Карта расположения промпарка Вятка"
+                  />
+                </CardContent>
+              </Card>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="documents" className="py-20 bg-gradient-to-br from-primary/5 to-primary/10">
+        <div className="container mx-auto px-4">
+          <h2 className="text-4xl font-bold text-center mb-12 text-secondary">Документы и предложения</h2>
+          <div className="max-w-4xl mx-auto grid md:grid-cols-2 gap-6">
+            <Card className="hover:shadow-lg transition-all hover:-translate-y-1">
+              <CardContent className="p-8">
+                <div className="flex items-center mb-4">
+                  <div className="bg-primary/10 p-3 rounded-lg mr-4">
+                    <Icon name="FileText" className="text-primary" size={32} />
+                  </div>
+                  <h3 className="text-xl font-semibold">Коммерческое предложение</h3>
+                </div>
+                <p className="text-muted-foreground mb-6">
+                  Подробная информация об условиях аренды и выкупа земельных участков
+                </p>
+                <Button className="w-full" variant="outline">
+                  <Icon name="Download" className="mr-2" size={18} />
+                  Скачать КП (PDF)
+                </Button>
+              </CardContent>
+            </Card>
+
+            <Card className="hover:shadow-lg transition-all hover:-translate-y-1">
+              <CardContent className="p-8">
+                <div className="flex items-center mb-4">
+                  <div className="bg-primary/10 p-3 rounded-lg mr-4">
+                    <Icon name="Map" className="text-primary" size={32} />
+                  </div>
+                  <h3 className="text-xl font-semibold">Генеральный план</h3>
+                </div>
+                <p className="text-muted-foreground mb-6">
+                  Схема территории с разметкой участков и инфраструктуры
+                </p>
+                <Button className="w-full" variant="outline">
+                  <Icon name="Download" className="mr-2" size={18} />
+                  Скачать план (PDF)
+                </Button>
+              </CardContent>
+            </Card>
+
+            <Card className="hover:shadow-lg transition-all hover:-translate-y-1">
+              <CardContent className="p-8">
+                <div className="flex items-center mb-4">
+                  <div className="bg-primary/10 p-3 rounded-lg mr-4">
+                    <Icon name="ScrollText" className="text-primary" size={32} />
+                  </div>
+                  <h3 className="text-xl font-semibold">Презентация парка</h3>
+                </div>
+                <p className="text-muted-foreground mb-6">
+                  Полная информация о возможностях и преимуществах промпарка
+                </p>
+                <Button className="w-full" variant="outline">
+                  <Icon name="Download" className="mr-2" size={18} />
+                  Скачать презентацию (PDF)
+                </Button>
+              </CardContent>
+            </Card>
+
+            <Card className="hover:shadow-lg transition-all hover:-translate-y-1">
+              <CardContent className="p-8">
+                <div className="flex items-center mb-4">
+                  <div className="bg-primary/10 p-3 rounded-lg mr-4">
+                    <Icon name="Scale" className="text-primary" size={32} />
+                  </div>
+                  <h3 className="text-xl font-semibold">Нормативная база</h3>
+                </div>
+                <p className="text-muted-foreground mb-6">
+                  Положения и регламенты работы индустриального парка
+                </p>
+                <Button className="w-full" variant="outline">
+                  <Icon name="Download" className="mr-2" size={18} />
+                  Скачать документы (ZIP)
+                </Button>
               </CardContent>
             </Card>
           </div>
