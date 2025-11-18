@@ -42,19 +42,27 @@ const Index = () => {
         </div>
       </header>
 
-      <section className="pt-32 pb-20 bg-gradient-to-br from-secondary to-secondary/90 text-white">
-        <div className="container mx-auto px-4">
+      <section className="relative pt-32 pb-20 text-white overflow-hidden">
+        <div className="absolute inset-0 z-0">
+          <img 
+            src="https://cdn.poehali.dev/files/8c0957e5-d341-49a3-9dfd-03ea76291fe1.png" 
+            alt="Территория промышленного парка Вятка"
+            className="w-full h-full object-cover"
+          />
+          <div className="absolute inset-0 bg-secondary/60"></div>
+        </div>
+        <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-3xl animate-fade-in">
-            <h2 className="text-5xl md:text-6xl font-bold mb-6">
+            <h2 className="text-5xl md:text-6xl font-bold mb-6 drop-shadow-lg">
               ПРОМЫШЛЕННЫЙ ПАРК "ВЯТКА"
             </h2>
-            <p className="text-xl md:text-2xl mb-4 opacity-95">
+            <p className="text-xl md:text-2xl mb-4 drop-shadow-lg">
               Земля под производство. В аренду и собственность.
             </p>
-            <p className="text-lg opacity-90 mb-8">
+            <p className="text-lg mb-8 drop-shadow-lg">
               Благоприятные условия для реализации проектов.
             </p>
-            <Button size="lg" className="bg-primary hover:bg-primary/90 text-white">
+            <Button size="lg" className="bg-primary hover:bg-primary/90 text-white shadow-lg">
               <a href="#contact">Оставить заявку</a>
             </Button>
           </div>
