@@ -20,7 +20,7 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-background">
-      <header className="fixed top-0 w-full bg-white/95 backdrop-blur-sm border-b border-border z-50">
+      <header className="fixed top-0 w-full bg-secondary backdrop-blur-sm border-b border-secondary z-50">
         <div className="container mx-auto px-4 py-4">
           <nav className="flex items-center justify-between">
             <div className="flex items-center gap-3">
@@ -31,12 +31,12 @@ const Index = () => {
               />
             </div>
             <div className="hidden md:flex gap-8">
-              <a href="#about" className="text-foreground hover:text-primary transition-colors">О парке</a>
-              <a href="#benefits" className="text-foreground hover:text-primary transition-colors">Преимущества</a>
-              <a href="#residents" className="text-foreground hover:text-primary transition-colors">Резиденты</a>
-              <a href="#location" className="text-foreground hover:text-primary transition-colors">Расположение</a>
-              <a href="#documents" className="text-foreground hover:text-primary transition-colors">Документы</a>
-              <a href="#contact" className="text-foreground hover:text-primary transition-colors">Контакты</a>
+              <a href="#about" className="text-white hover:text-white/80 transition-colors">О парке</a>
+              <a href="#benefits" className="text-white hover:text-white/80 transition-colors">Преимущества</a>
+              <a href="#residents" className="text-white hover:text-white/80 transition-colors">Резиденты</a>
+              <a href="#location" className="text-white hover:text-white/80 transition-colors">Расположение</a>
+              <a href="#documents" className="text-white hover:text-white/80 transition-colors">Документы</a>
+              <a href="#contact" className="text-white hover:text-white/80 transition-colors">Контакты</a>
             </div>
           </nav>
         </div>
